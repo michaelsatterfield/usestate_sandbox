@@ -27,3 +27,16 @@ button {
   font-weight: bold;
   font-size: 50px;
 }
+
+
+button:hover {
+  display: inline-block;
+  background-color: #6b6fbe;
+  border: 5px;
+  width: 70px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
