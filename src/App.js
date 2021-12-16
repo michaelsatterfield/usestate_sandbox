@@ -7,17 +7,22 @@ import './App.css'
 function App() {
 
 
-    const [count] = useState(123)
+    let [count, setCount] = useState(123)
 
         console.log(count);
 
     let increase = () => {
+       setCount(count += 1)
+    }
+    let decrease = () => {
+        setCount( count -= 1)
     }
 
     return (
         <div className="container">
             <h1>{count}</h1>
             <button onClick={increase}>+</button>
+            <button onClick={decrease}>-</button>
         </div>
 
     );
